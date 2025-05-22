@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="/src/output.css" rel="stylesheet">
+  <script defer src="./script.js"></script>
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+<body class="bg-LightGrayishBlue font-Manrope">
+  <div class="h-screen w-screen grid place-items-center">
+    <!-- <div class="w-6/7 md:w-1/2 md:h-2/5 xl:h-4/11 bg-white rounded-xl shadow-md md:flex"> -->
+    <div class="w-6/7 md:w-1/2 bg-white rounded-xl shadow-md md:flex">
+      <!-- First -->
+      <div class="w-full h-54 md:w-3/5 md:h-auto">
+        <img src="/images/drawers.jpg" alt="drawers" class="object-top-left w-full h-full object-cover rounded-t-xl md:rounded-l-xl md:rounded-r-none">
+      </div>
+      <!-- Second -->
+      <div class="flex flex-col gap-3 pt-7 w-full">
+        <div class="flex flex-col gap-3 md:gap-2 px-[35px] md:px-10">
+          <h1 class="font-bold md:text-xl text-DarkGrayishBlue">
+            Shift the overall look and feel by adding these wonderful 
+            touches to furniture in your home
+          </h1>
+          <h2 class="text-[13px] text-DesaturatedDarkBlue">
+            Ever been in a room and felt like something was missing? Perhaps 
+            it felt slightly bare and uninviting. I’ve got some simple tips 
+            to help you make any room feel complete.
+          </h2>
+        </div>
+        <!-- Share -->
+        <div class="flex justify-between items-center px-8.5 py-4 md:pb-7 rounded-b-lg" id="share">
+          <!-- Default -->
+          <div class="flex justify-between md:justify-start md:gap-5 w-2/3 text-xs" id="normal">
+            <img src="/images/avatar-michelle.jpg" alt="avatar-michelle" class="rounded-full w-10 h-10">
+            <div class="flex flex-col justify-evenly">
+              <h3 class="font-bold text-DarkGrayishBlue">Michelle Appleton</h3>
+              <h4 class="text-DesaturatedDarkBlue">28 Jun 2020</h4>
+            </div>
+          </div>
+          <!-- Active -->
+          <div class="flex justify-between items-center w-2/3 hidden" id="active">
+            <h1 class="uppercase text-GrayishBlue tracking-[.25em] text-sm">Share</h1>
+            <img src="/images/icon-facebook.svg" alt="icon-facebook">
+            <img src="/images/icon-twitter.svg" alt="icon-twitter">
+            <img src="/images/icon-pinterest.svg" alt="icon-pinterest">
+          </div>
+          <!-- Tooltip -->
+          <div class="relative flex justify-center items-center">
+            <div class="hidden absolute bottom-full mb-3 z-10 left-1/2 -translate-x-1/2" id="tooltip">
+              <div class="flex flex-col items-center w-max">
+                <div class="flex gap-5 w-full bg-DarkGrayishBlue py-5 px-8 rounded-xl">
+                  <h1 class="uppercase text-GrayishBlue tracking-[.25em] text-md">Share</h1>
+                  <img src="/images/icon-facebook.svg" alt="icon-facebook">
+                  <img src="/images/icon-twitter.svg" alt="icon-twitter">
+                  <img src="/images/icon-pinterest.svg" alt="icon-pinterest">
+                </div>
+                <div class="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-DarkGrayishBlue"></div>
+              </div>
+            </div>
+            <button class="flex justify-center items-center bg-LightGrayishBlue rounded-full p-2 hover:cursor-pointer" id="shareButton">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" class="fill-share" id="svg"><path d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="hidden md:block absolute bottom-0 w-full text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://mariellamonacillo.netlify.app">MGM</a>.
+  </div>
+</body>
+</html>
