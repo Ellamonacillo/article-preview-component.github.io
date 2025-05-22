@@ -16,7 +16,7 @@ Article Preview Component
 
 ### Screenshot
 
-![](/assets/images/screenshot.png)
+![](/images/screenshot.png)
 
 ### Links
 
